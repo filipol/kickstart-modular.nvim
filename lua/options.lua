@@ -25,6 +25,7 @@ end)
 
 -- Enable break indent
 vim.opt.breakindent = true
+vim.opt.linebreak = true
 
 -- Save undo history
 vim.opt.undofile = true
@@ -61,5 +62,8 @@ vim.opt.cursorline = true
 
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
+
+--Move up and down within wrapped lines
+vim.opt.whichwrap = 'h,l,<,>,[,],~'
 
 -- vim: ts=2 sts=2 sw=2 et

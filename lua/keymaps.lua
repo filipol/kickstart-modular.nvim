@@ -36,6 +36,10 @@ vim.api.nvim_set_keymap('n', '<C-s>', ':wa<CR>', { noremap = true, silent = true
 vim.api.nvim_set_keymap('i', '<C-s>', '<Esc>:wa<CR>a', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('v', '<C-s>', '<Esc>:wa<CR>gv', { noremap = true, silent = true })
 
+--Makes j and k move up and down and treat wraped lines like regular lines
+vim.api.nvim_set_keymap('n', 'j', 'gj', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', 'k', 'gk', { noremap = true, silent = true })
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
