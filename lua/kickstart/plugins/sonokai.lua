@@ -10,8 +10,9 @@ return {
       -- Load the colorscheme here.
       -- Like many other themes, this one has different styles, and you could load
       -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
-      vim.g.sonokai_enable_italic = '1'
+      vim.g.sonokai_enable_italic = '0'
       vim.g.sonokai_style = 'andromeda'
+      vim.g.sonokai_transparent_background = 1
       vim.cmd.colorscheme 'sonokai'
 
       -- You can configure highlights by doing something like:

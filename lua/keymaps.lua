@@ -40,6 +40,9 @@ vim.api.nvim_set_keymap('v', '<C-s>', '<Esc>:wa<CR>gv', { noremap = true, silent
 vim.api.nvim_set_keymap('n', 'j', 'gj', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', 'k', 'gk', { noremap = true, silent = true })
 
+-- Map 'jj' to Escape in insert mode
+vim.keymap.set('i', 'jj', '<Esc>', { noremap = true, silent = true })
+
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
 
