@@ -57,4 +57,13 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   end,
 })
 
+vim.api.nvim_create_autocmd({ 'FocusLost', 'BufLeave', 'WinLeave' }, {
+  pattern = '*',
+  callback = function()
+    if vim.bo.modified then
+      vim.cmd 'silent! write'
+    end
+  end,
+})
+
 -- vim: ts=2 sts=2 sw=2 et
