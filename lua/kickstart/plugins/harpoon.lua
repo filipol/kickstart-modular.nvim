@@ -7,11 +7,11 @@ return {
 
     harpoon.setup {}
 
-    vim.keymap.set('n', '<m-h>', function()
+    vim.keymap.set('n', '<leader>hh', function()
       harpoon.ui:toggle_quick_menu(harpoon:list())
     end, { desc = 'Harpoon Toggle' })
 
-    vim.keymap.set('n', '<m-a>', function()
+    vim.keymap.set('n', '<leader>ha', function()
       harpoon:list():add()
     end, { desc = 'Harpoon Add' })
 
@@ -35,11 +35,11 @@ return {
     -- end)
 
     -- Toggle previous & next buffers stored within Harpoon list
-    vim.keymap.set('n', '<m-j>', function()
+    vim.keymap.set('n', '<C-l>', function()
       harpoon:list():prev()
-    end)
-    vim.keymap.set('n', '<m-k>', function()
+    end, { desc = 'Harpoon next buffer' })
+    vim.keymap.set('n', '<C-h>', function()
       harpoon:list():next()
-    end)
+    end, { desc = 'Harpoon prev buffer' })
   end,
 }
