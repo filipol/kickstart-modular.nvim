@@ -72,4 +72,5 @@ vim.opt.scrolloff = 10
 --Move up and down within wrapped lines
 vim.opt.whichwrap = 'h,l,<,>,[,],~'
 
+vim.opt.termguicolors = true
 -- vim: ts=2 sts=2 sw=2 et
